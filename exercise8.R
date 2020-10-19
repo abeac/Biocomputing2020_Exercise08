@@ -3,7 +3,7 @@ score <- read.table("UWvMSU_1-22-13.txt", header = TRUE)
 #seperate scores of UW and MSU
 UWscore= cumsum(score$score[score$team == "UW"])
 MSUscore= cumsum(score$score[score$team == "MSU"])
-#seperate time scored for each time
+#seperate time scored for each team
 UWtime= score$time[score$team == "UW"]
 MSUtime= score$time[score$team == "MSU"]
 #combine cumulative score and time scored into a dataframe for each team

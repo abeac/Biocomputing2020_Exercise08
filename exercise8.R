@@ -29,6 +29,8 @@ while(guess != answer){
     } else {
         if(i == 10){ #if users guesses incorrectly 10 times
          cat("You ran out of guesses")
+         cat("\n") #adds new line
+         i=10 #resets number of tries
         } else {
             if(guess < answer){ #user guesses a number smaller than the correct answer
               cat ("Higher")

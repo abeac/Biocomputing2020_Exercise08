@@ -28,7 +28,7 @@ while(guess != answer){
         break
     } else {
         if(i == 10){ #if users guesses incorrectly 10 times
-         cat("You ran out of guesses")
+         cat("You ran out of guesses. Try again!")
          cat("\n") #adds new line
          i=10 #resets number of tries
         } else {
